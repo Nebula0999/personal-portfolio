@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Allan Nabule</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main-hero">
+            <div class="navigation">
+                <header>
+                    <h1><img src="images/profile.png" class="logo" alt="Profile Photo">Allan Nabule</h1>
+                </header>
+                <nav>
+                    <button id="hamburger" class="hamburger" aria-controls="main-nav" aria-expanded="false">&#9776;</button>  
+                    <nav class="nav-links" id="main-nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+            <div class="hero-content hero" id="home">
+                <h1>Welcome to My Portfolio</h1>
+                <p id="intro">Discover my projects and skills.I am a proficient backend developer with a strong foundation in Python and Django. I have experience working on complex web applications and have a keen eye for detail. I have a wide range of personal
+                projects on github. My projects range from simple web applications to complex full-stack applications. I can integrate APIs and databases to create dynamic and interactive web experiences.</p>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+            <div class="About" id="About">
+                <h2>About Me</h2>
+                <img src="images/profile.png" alt="My Photo" class="profile-photo">
+                <p>I am Allan Nabule, a passionate backend developer with expertise in Python and Django. I enjoy building efficient and scalable web applications that solve real-world problems. With a strong focus on clean code and best practices, I strive to deliver high-quality solutions. Am also learning React with ALX Africa so that I can become a fullstack developer</p>
+
+            </div>
+            <div class="projects" id="projects">
+                <h2 id="projects-title">My Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <img src="images/Screenshot 2025-12-22 110645.png" class="project-image" alt="Money Mates Tracker">
+                        <h3>Money Mates Tracker</h3>
+                        <p>A web application that allows users to track their daily contributions and alerts them when they have not yet contributed.</p>
+                        <a href="https://notifier-dpvz.onrender.com/" class="project-link" target="_blank" >View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/Screenshot 2025-12-22 112557.png" class="project-image" alt="E-commerce API">
+                        <h3>E-commerce API</h3>
+                        <p>An e-commerce API built with Django, featuring user authentication and payment integration. It also has a database of products and a cart system.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/WhatsApp Image 2025-12-22 at 11.36.57 AM.jpeg" class="project-image" alt="Blog API Project Screenshot" class="project-image">
+                        <h3>Blog API</h3>
+                        <p>A RESTful API for a blogging platform, enabling CRUD operations for posts and comments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <h2>Contact Me</h2>
+                <div class="mail-form">
+                    <!-- Netlify form: keep markup in the HTML so Netlify can detect it at build time -->
+                    <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <!-- Hidden input for Netlify to identify the form -->
+                        <input type="hidden" name="form-name" value="contact">
+                        <!-- Honeypot field to reduce spam -->
+                        <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                    <div id="form-status" aria-live="polite" style="margin-top:0.5rem"></div>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/Nebula077" target="_blank"><img src="images/download (22).png" alt="GitHub" class="logos"></a>
+                    <a href="https://www.linkedin.com/in/allan-nabule-540638292/" target="_blank"><img src="images/download (21).png" alt="LinkedIn" class="logos"></a>
+                    <a href="https://twitter.com/nabule_allan" target="_blank"><img src="images/download (20).png" alt="Twitter" class="logos"></a>
+                    <a href="https://www.instagram.com/allannabule/" target="_blank"><img src="images/Screenshot 2025-12-22 123518.png" alt="Instagram" class="logos"></a>
+                </div>
+            </div>
+            <div class="footer">
+                <footer>
+                    <p>&copy; 2025 Allan Nabule. All rights reserved.</p>
+                </footer>
+            </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
